@@ -1,0 +1,41 @@
+{
+	"manifest_version": 1,
+	"version": 1,
+	"type": "APP",
+	"name": {
+		"ja": "テーブル ルックアップ プラグイン",
+		"en": "Table lookup plug-in",
+		"zh": "表格lookup插件"
+	},
+	"description": {
+		"ja": "ルックアップ元のアプリからテーブル内のフィールドデータをコピーするプラグインです。",
+		"en": "This plug-in enhances the lookup field to be able to copy Tables.",
+		"zh": "本插件可从lookup所参照的应用中复制表格内的数据。"
+	},
+	"icon": "image/icon.png",
+	"desktop": {
+		"js": [
+			"https://js.cybozu.com/momentjs/2.10.6/moment.min.js",
+			"https://js.cybozu.com/jquery/2.1.4/jquery.min.js",
+			"js/desktop.js"
+		],
+		"css": [
+		]
+	},
+	"config": {
+		"html": "html/config.html",
+		"js": [
+			"https://js.cybozu.com/jquery/2.1.4/jquery.min.js",
+			"https://js.cybozu.com/jqueryui/1.11.4/jquery-ui.min.js",
+			"https://js.cybozu.com/jsrender/0.9.83/jsrender.min.js",
+			"js/config.js"
+		],
+		"css": [
+			"css/51-current-default.css",
+			"https://js.cybozu.com/jqueryui/1.11.4/themes/smoothness/jquery-ui.css",
+			"https://js.cybozu.com/font-awesome/v4.4.0/css/font-awesome.min.css",
+			"css/config.css"
+		],
+		"required_params": ["lookupField","copyFromTable","copyToTable"]
+	}
+}

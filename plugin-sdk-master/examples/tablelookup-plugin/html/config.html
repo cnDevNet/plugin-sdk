@@ -1,0 +1,154 @@
+<div id="tc-plugin">
+    <div class="block tc-plugin-block">
+       <div class="kintoneplugin-label">{{html:terms.tc_lookup_label}}<span class="kintoneplugin-require">*</span></div>
+       <div class="kintoneplugin-row">{{html:terms.tc_lookup_description}}</div>
+       <div class="kintoneplugin-row caution">{{html:terms.tc_caution}}</div>
+       <div class="kintoneplugin-select-outer">
+           <div class="kintoneplugin-select">
+               <select class="lookupField">
+                   <option value="">-----</option>
+               </select>
+           </div>
+           <div class="kintoneplugin-alert common" id="msg1">
+               <p>{{html:terms.tc_message}}。</p>
+           </div>
+           <div class="kintoneplugin-alert" id="msg2">
+               <p>{{html:terms.tc_message_changeEventfield}}</p>
+           </div>
+       </div>
+    </div>
+    <div class="block tc-plugin-block" id="changeEventItem">
+       <div class="kintoneplugin-label">{{html:terms.tc_changeEvent_label}}<span class="kintoneplugin-require">*</span></div>
+       <div class="kintoneplugin-row">{{html:terms.tc_changeEvent_description}}</div>
+       <div class="kintoneplugin-select-outer">
+           <input id="changeEventField" type="text" disabled="disabled" class="kintoneplugin-input-text"></input>
+       </div>
+    </div>
+
+
+
+    <div class="block tc-plugin-block">
+      <div class="kintoneplugin-label">{{html:terms.tc_tablefield_label}}</div>
+      <div class="kintoneplugin-row">{{html:terms.tc_tablefield_description}}</div>
+      <div class="kintoneplugin-row caution">{{html:terms.tc_caution}}</div>
+      <div class="kintoneplugin-select-outer">
+         <div class="tc-plugin-copyfromtable">
+                <div>{{html:terms.tc_tablefield_from_title}}<span class="kintoneplugin-require">*</span></div>
+                <div class="kintoneplugin-select">
+                  <select class="copyFromTable">
+                    <option value="">-----</option>
+                  </select>
+              </div>
+              <div class="kintoneplugin-alert common" id="msg3">
+                  <p>{{html:terms.tc_message}}。</p>
+              </div>
+          </div>
+          <div class="tc-plugin-copytotable">
+                <div>{{html:terms.tc_tablefield_to_title}}<span class="kintoneplugin-require">*</span></div>
+                <div class="kintoneplugin-select">
+                  <select class="copyToTable">
+                      <option value="">-----</option>
+                  </select>
+              </div>
+              <div class="kintoneplugin-alert common" id="msg4">
+                  <p>{{html:terms.tc_message}}。</p>
+              </div>
+          </div>
+      </div>
+      <br/>
+        <div class="kintoneplugin-row">{{html:terms.tc_copyfield_description}}</div>
+            <table class="tc-plugin-copyfield kintoneplugin-table">
+                <thead>
+                    <tr>
+                        <th class="kintoneplugin-table-th">
+                            <span class="title">{{html:terms.tc_copyfield_from_title}}</span>
+                        </th>
+                        <th class="kintoneplugin-table-th">
+                            <span class="title">    </span>
+                        </th>
+                        <th class="kintoneplugin-table-th">
+                            <span class="title">{{html:terms.tc_copyfield_to_title}}</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tc-plugin-copyfield-tbody">
+                    <tr>
+                        <td>
+                            <div class="kintoneplugin-table-td-control">
+                              <div class="kintoneplugin-table-td-control-value">
+                                <div class="kintoneplugin-select-outer">
+                                    <div class="kintoneplugin-select">
+                                        <select class="tc-plugin-column1">
+                                            <option value="" name="">-----</option>
+                                        </select>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </td>
+                        <td class = "kintoneplugin-table-td-label">
+                          ➡
+                        </td>
+                        <td>
+                            <div class="kintoneplugin-table-td-control">
+                              <div class="kintoneplugin-table-td-control-value">
+                                    <div class="kintoneplugin-select-outer">
+                                    <div class="kintoneplugin-select">
+                                        <select class="tc-plugin-column2">
+                                          <option value="" name="">-----</option>
+                                        </select>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </td>
+                        <td class="kintoneplugin-table-td-operation tc-plugin-column3">
+                            <button type="button" class="kintoneplugin-button-add-row-image addList" title="Add row"></button>
+                            <button type="button" class="kintoneplugin-button-remove-row-image removeList" title="Delete this row"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <div class="block tc-plugin-block">
+       <div class="kintoneplugin-label">{{html:terms.tc_disable_label}}</div>
+       <div class="kintoneplugin-row">{{html:terms.tc_disable_description}}</div>
+       <div class="kintoneplugin-row">{{html:terms.tc_disable_description2}}</div>
+           <table class="tc-plugin-enablefield kintoneplugin-table">
+                  <thead>
+                      <tr>
+                          <th class="kintoneplugin-table-th">
+                              <span class="title">{{html:terms.tc_disable_field_title}}
+                              </span>
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody id="tc-plugin-enablefield-tbody">
+                      <tr>
+                          <td>
+                              <div class="kintoneplugin-table-td-control">
+                                <div class="kintoneplugin-table-td-control-value">
+                                  <div class="kintoneplugin-select-outer">
+                                      <div class="kintoneplugin-select">
+                                          <select class="tc-plugin-column1">
+                                              <option value="">-----</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </td>
+                          <td class="kintoneplugin-table-td-operation tc-plugin-column3">
+                              <button type="button" class="kintoneplugin-button-add-row-image addList" title="Add row"></button>
+                              <button type="button" class="kintoneplugin-button-remove-row-image removeList" title="Delete this row"></button>
+                          </td>
+                      </tr>
+                  </tbody>
+          </table>
+    </div>
+
+    <div class="block">
+        <button class="kintoneplugin-button-dialog-ok" id="kintoneplugin-submit" type="button">{{html:terms.tc_submit}}</button>
+        <button class="kintoneplugin-button-dialog-cancel" id="kintoneplugin-cancel" type="button">{{html:terms.tc_cancel}}</button>
+    </div>
+</div>

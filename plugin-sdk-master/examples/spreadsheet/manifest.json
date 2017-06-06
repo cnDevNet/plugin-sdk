@@ -1,0 +1,45 @@
+{
+    "manifest_version": 1,
+    "version": 1,
+    "type": "APP",
+    "name": {
+        "ja": "kintone スプレッドシート",
+        "en": "kintone spreadsheet",
+        "zh": "kintone电子表格"
+    },
+    "description": {
+        "ja": "kintoneの一覧画面をExcelのようにデータの追加や編集が追加ができます。",
+        "en": "You can add and edit records like spreadsheet.",
+        "zh":"在kintone的列表页面可像在Excel上一样进行数据的编辑和添加。"
+    },
+    "icon": "image/icon.png",
+    "homepage_url": {
+        "ja": "https://github.com/mura-/kintone-spreadsheet",
+        "en": "https://github.com/mura-/kintone-spreadsheet",
+        "zh": "https://git.oschina.net/cybozudeveloper/plugin-sdk/tree/master/plugin-sdk-master/examples/spreadsheet"
+    },
+    "desktop": {
+        "js": [
+            "https://js.cybozu.cn/jquery/2.1.1/jquery.min.js",
+            "https://js.cybozu.cn/handsontable/0.21.0/handsontable.full.min.js",
+            "js/desktop.js"
+        ],
+        "css": [
+            "https://js.cybozu.cn/handsontable/0.21.0/handsontable.full.min.css"
+        ]
+    },
+    "config": {
+        "html": "html/config.html",
+        "js": [
+            "https://js.cybozu.cn/jquery/2.1.1/jquery.min.js",
+            "https://js.cybozu.cn/jqueryui/1.11.4/jquery-ui.min.js",
+            "https://js.cybozu.cn/vuejs/v1.0.26/vue.min.js",
+            "https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.4.2/Sortable.min.js",
+            "js/config.js"
+        ],
+        "css": [
+            "css/config.scss",
+            "css/51-zh-default.scss"
+        ]
+    }
+}

@@ -1,0 +1,54 @@
+<div class='colorcell-plugin' id='form'>
+  <div class='kintoneplugin-row'>
+    <div class='kintoneplugin-label'>1. 请先创建自定义列表。</div>
+    创建自定义列表，准备好如下电子表格所需要的元素。
+    <br>
+    <a href='https://help.cybozu.cn/zh/k/user/set_view.html' target='_blank'>kintone 用户帮助:设置列表</a>
+    <br>
+    <br>
+    例)
+    <br>
+    &lt;div id="sheet"&gt;&lt;/div&gt;
+  </div>
+  <div class='kintoneplugin-row'>
+    <div class='kintoneplugin-label'>2. 输入步骤1中设置的元素ID。</div>
+    <div class='kintoneplugin-input-outer'>
+      <input class='kintoneplugin-input-text' placeholder='sheet' type='text' v-model='elementId'>
+    </div>
+  </div>
+  <div class='kintoneplugin-row'>
+    <div class='kintoneplugin-label'>3. 设置要在电子表格中显示的字段。</div>
+    <table>
+      <thead>
+        <tr>
+          <th track-by='$index' v-for='(index, column) in columns '>
+            第{{ index + 1 }} 列
+            <div class='control'>
+              <button class='addColumn' v-on:click='addColumn(index+1)'>+</button>
+              <button class='addColumn' v-on:click='delColumn(index)'>x</button>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id='columns'>
+          <td track-by='$index' v-for='(index, column) in columns'>
+            <div class='kintoneplugin-input-outer'>
+              <div class='kintoneplugin-select'>
+                <select v-model='column'>
+                  <option v-bind:value='option.value' v-for='option in options'>
+                    {{ option.text }}
+                  </option>
+                </select>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class='kintoneplugin-row'>
+    <button class='kintoneplugin-button-dialog-ok' id='submit' type='button' v-on:click='registConfig'>保存</button>
+    <button class='kintoneplugin-button-dialog-cancel' id='cancel' type='button' v-on:click='cancel'>取消</button>
+  </div>
+</div>

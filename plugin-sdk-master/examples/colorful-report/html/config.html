@@ -1,0 +1,74 @@
+<body>
+	<div id="kintone-colorful-plugin">
+		<div class="kintoneplugin-row">
+			<div class="kintoneplugin-label">要标注颜色的列表名称</div>
+			<div>
+				<div class="kintone-box">
+					<div class="kintoneplugin-input-outer">
+						<input class="kintoneplugin-input-text" type="text" id="view-id">
+                        <button type="button" id="getViewSetting" class="kintoneplugin-button-dialog-ok">列表设置按钮</button>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="kintoneplugin-row">
+            <div class="kintoneplugin-label">设置列表的项目(初始设置)<span class="kintoneplugin-require">*</span>
+            </div>
+            <div class="viewSettingTable">
+                <span class="default-noset">初始设置未完成。请输入列表名称后，按下列表设置按钮，完成初始设置。</span>
+            </div>
+        </div>
+		<div class="kintoneplugin-row">
+			<div class="kintoneplugin-label">定列会日期<span class="kintoneplugin-require">*</span></div>
+			<div class="kintoneplugin-select-outer">
+				<div class="kintoneplugin-select">
+					<select id="set-day">
+						<option value="indefinite">未定</option>
+                        <option value="monday">每周一</option>
+                        <option value="tuesday">每周二</option>
+                        <option value="wednesday">每周三</option>
+                        <option value="thursday">每周四</option>
+                        <option value="friday">每周五</option>
+					</select>
+				</div>
+			</div>
+		</div>
+        <div class="kintoneplugin-row">
+            <div class="kintoneplugin-label">请选择作为周报标题的字段<span class="kintoneplugin-require">*</span><br />※仅可选择单行文本框</div>
+			<div class="kintoneplugin-select-outer">
+				<div class="kintoneplugin-select">
+					<select id="title-field">
+						<option value="">--</option>
+					</select>
+				</div>
+			</div>
+		</div>
+        <div class="kintoneplugin-row">
+            <div class="kintoneplugin-label">请选择作为开会日期的字段<span class="kintoneplugin-require">*</span><br />※仅可选择日期字段</div>
+			<div class="kintoneplugin-select-outer">
+				<div class="kintoneplugin-select">
+					<select id="kaisai-date">
+						<option value="">--</option>
+					</select>
+				</div>
+			</div>
+		</div>
+        <div class="kintoneplugin-row">
+            <div class="kintoneplugin-label">请指定用于标注高亮显示的符号和高亮显示的颜色</div>
+            <div>
+				<div class="kintone-box">
+					<div class="kintoneplugin-input-outer">
+                        <span>文字列</span>
+						<input class="kintoneplugin-input-text" type="text" id="highlight-st" placeholder="★〇▼">&nbsp;&nbsp;&nbsp;
+                        <span>色</span>
+                        <input class="kintoneplugin-input-text" type="text" id="highlight-co" placeholder="#000000～#FFFFFF">
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="block">
+            <button type="button" id="submit" class="kintoneplugin-button-dialog-ok">     保存     </button>
+            <button type="button" id="cancel" class="kintoneplugin-button-dialog-cancel">     取消   </button>
+        </div>
+    </div>
+</body>

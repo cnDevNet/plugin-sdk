@@ -1,0 +1,96 @@
+<div>
+    <div class="block">
+        <label class="kintoneplugin-label">
+        <span id ="container_label">活动名称字段</span>
+        <span class="kintoneplugin-require">*</span>
+    </label>
+        <div class="kintoneplugin-row">请选择要作为活动名称使用的文本字段的字段名称。</div>
+        <div class="kintoneplugin-select-outer">
+            <div class="kintoneplugin-select">
+                <select id="name_code">
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <label class="kintoneplugin-label">
+        <span id ="container_label">开始日与时间字段</span>
+        <span class="kintoneplugin-require">*</span>
+    </label>
+        <div class="kintoneplugin-row">请选择要作为事件开始时间使用的日期与时间字段的字段代码。</div>
+        <div class="kintoneplugin-select-outer">
+            <div class="kintoneplugin-select">
+                <select id="start_datetime_code">
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <label class="kintoneplugin-label">
+        <span id ="container_label">结束日期与时间字段</span>
+        <span class="kintoneplugin-require">*</span>
+    </label>
+        <div class="kintoneplugin-row">请选择要作为活动结束时间使用的日期与时间字段的字段代码。</div>
+        <div class="kintoneplugin-select-outer">
+            <div class="kintoneplugin-select">
+                <select id="end_datetime_code">
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="block">
+        <label class="kintoneplugin-label">
+        <span id ="container_label">状态（任意）</span>
+    </label>
+        <div class="kintoneplugin-row">可指定流程管理的各状态的背景色。<br> ※背景色可通过英语、16进制、RGB等形式来设置。　红色：red, #ff0000, rgb(255,0,0)　绿色：green, #008000, rgb(0,128,0)</div>
+        <div class="kintoneplugin-input-outer">
+            <table>
+                <tr style="background:#ccccff">
+                    <th>No.</th>
+                    <th>状态</th>
+                    <th>背景色</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input id="status1" class="kintoneplugin-input-text"></input>
+                    </td>
+                    <td><input id="color1" class="kintoneplugin-input-text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input id="status2" class="kintoneplugin-input-text"></input>
+                    </td>
+                    <td><input id="color2" class="kintoneplugin-input-text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input id="status3" class="kintoneplugin-input-text"></input>
+                    </td>
+                    <td><input id="color3" class="kintoneplugin-input-text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input id="status4" class="kintoneplugin-input-text"></input>
+                    </td>
+                    <td><input id="color4" class="kintoneplugin-input-text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><input id="status5" class="kintoneplugin-input-text"></input>
+                    </td>
+                    <td><input id="color5" class="kintoneplugin-input-text"></input>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <div class="block">
+        <button type="button" id="submit" class="kintoneplugin-button-dialog-ok">     保存     </button>
+        <button type="button" id="cancel" class="kintoneplugin-button-dialog-cancel">     取消   </button>
+    </div>
+</div>
